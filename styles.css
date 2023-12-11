@@ -22,6 +22,7 @@ section {
   border: solid 3px blue;
   border-radius: 18px;
   font-size: x-large;
+  margin: 10px;
 }
 
 button {
@@ -34,9 +35,30 @@ button {
   font-family: sans-serif;
 }
 
+
 #bookmark {
-    font-style: right
+    font-style: right;
     padding 0;
     margin 0;
+}
+
+.footer {
+position: fixed;
+bottom: 0px;
+left: 0;
+background-color: red;
+width: 100%;
+z-index: 0;
+
+}
+
+.footernavi {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;    
+    align-items: center;
+    height: 50px;
+    font-size: x-large;
+    list-style: none;
 }
 
