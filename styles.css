@@ -1,14 +1,20 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 h1 {
+  position: fixed;
+  width: 100%;
+  top: 0;
   color: blue;
   background-color: aqua;
   text-align: center;
   padding: 5px;
+  z-index: 1;
 }
 
 section {
@@ -30,6 +36,8 @@ section {
 }
 .card {
   position: relative;
+  top: 50px;
+  bottom: 50px;
   display: flex;
   flex-direction: row;
 }
@@ -57,19 +65,21 @@ section {
   position: fixed;
   bottom: 0px;
   left: 0;
-  background-color: red;
+  background-color: aqua;
   width: 100%;
   z-index: 0;
+  height: 70px;
 }
 
 .footernavi {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 50px;
   font-size: x-large;
   list-style: none;
+  padding-left: 12%;
 }
 
 .categories {
@@ -81,6 +91,7 @@ section {
   width: 100%;
 }
 
-.active {
-  color: lightblue;
+.kleines_Bild {
+  height: 50%;
+  width: 50%;
 }
